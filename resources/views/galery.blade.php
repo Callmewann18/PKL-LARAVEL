@@ -167,6 +167,8 @@
     .grid-container img {
         width: 100%;
         height: auto;
+        width: 270px;
+        height: 270px;
         border-radius: 15px;
         object-fit: cover;
     }
@@ -203,22 +205,25 @@
   <div class="card-container">
     <div class="center">
       <div class="grid-container">
-          <img src="img/monika-grabkowska-P1aohbiT-EY-unsplash.jpg" style="width: 270px; height: 270px" alt="Image 1">
-          <img src="img/jonathan-borba-Gkc_xM3VY34-unsplash.jpg" style="width: 270px; height: 270px" alt="Image 2">
-          <img src="img/michele-blackwell-rAyCBQTH7ws-unsplash.jpg" style="width: 270px; height: 270px" alt="Image 3">
-          <img src="img/mariana-medvedeva-iNwCO9ycBlc-unsplash.jpg" style="width: 270px; height: 270px" alt="Image 4">
+        @if ($gallery->count() > 1)
+        @for ($i = 1; $i < $gallery->count(); $i++)
+                <img src="/storage/{{ $gallery[$i]->image }}" alt="Image 2">
+        @endfor
+      @endif
       </div>
       <div class="grid-container">
-        <img src="img/Chefsolo.jpg" style="width: 270px; height: 270px" alt="Image 1">
-        <img src="img/sanket-shah-SVA7TyHxojY-unsplash.jpg" style="width: 270px; height: 270px" alt="Image 2">
-        <img src="img/anh-nguyen-kcA-c3f_3FE-unsplash.jpg" style="width: 270px; height: 270px" alt="Image 3">
-        <img src="img/fathul-abrar-T-qI_MI2EMA-unsplash.jpg" style="width: 270px; height: 270px" alt="Image 4">
+        @if ($gallery->count() > 1)
+        @for ($i = 1; $i < $gallery->count(); $i++)
+                <img src="/storage/{{ $gallery[$i]->image }}" alt="Image 3">
+        @endfor
+      @endif
       </div>
       <div class="grid-container">
-        <img src="img/ella-olsson-mmnKI8kMxpc-unsplash.jpg" style="width: 270px; height: 270px" alt="Image 1">
-        <img src="img/eiliv-aceron-ZuIDLSz3XLg-unsplash.jpg" style="width: 270px; height: 270px" alt="Image 2">
-        <img src="img/jimmy-dean-Jvw3pxgeiZw-unsplash.jpg" style="width: 270px; height: 270px" alt="Image 3">
-        <img src="img/luisa-brimble-HvXEbkcXjSk-unsplash.jpg" style="width: 270px; height: 270px" alt="Image 4">
+        @if ($gallery->count() > 1)
+        @for ($i = 1; $i < $gallery->count(); $i++)
+                <img src="/storage/{{ $gallery[$i]->image }}" alt="Image 4">
+        @endfor
+      @endif
       </div>
     </div>
   </div>
@@ -292,6 +297,13 @@
       width: 30px;
       height: 30px;
   }
+  
+  footer .copyright {
+      text-align: center;
+      color: #fff;
+      font-size: 14px;
+      margin-top: 20px;
+  }
 
   @media (max-width: 768px) {
       .footer-container {
@@ -307,46 +319,47 @@
 </style>
 
 <footer>
-  <div class="container mt-5">
-      <div class="jumbotron">
-          <div class="footer-container">
-              <div class="footer-column">
-                  <h2 class="fw-bolder text-light">Tasty Food</h2>
-                  <p class="fw-bolder text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  <div class="social-icons">
-                      <a href="https://www.bing.com/ck/a?!&&p=b460a9380f582810JmltdHM9MTcyNTE0ODgwMCZpZ3VpZD0wYWY1MWEzOC02NDAwLTZmM2QtMThlYS0wOWRhNjU1NjZlZTImaW5zaWQ9NTIwNw&ptn=3&ver=2&hsh=3&fclid=0af51a38-6400-6f3d-18ea-09da65566ee2&psq=facebook&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL2luZGV4LnBocC8&ntb=1"><img src="img/001-facebook.png" alt="Facebook" class="icon"></a>
-                      <a href="https://www.bing.com/ck/a?!&&p=3af03bccfbcdf613JmltdHM9MTcyNTE0ODgwMCZpZ3VpZD0wYWY1MWEzOC02NDAwLTZmM2QtMThlYS0wOWRhNjU1NjZlZTImaW5zaWQ9NTE5Mw&ptn=3&ver=2&hsh=3&fclid=0af51a38-6400-6f3d-18ea-09da65566ee2&psq=twitter&u=a1aHR0cHM6Ly90d2l0dGVyLmNvbS8_bGFuZz1lbi1pZA&ntb=1"><img src="img/002-twitter.png" alt="Twitter" class="icon"></a>
-                  </div>
-              </div>
-              <div class="footer-column">
-                  <h3 class="fw-bolder text-light">Useful links</h3>
-                  <ul>
-                      <li><a href="https://wannmee.blogspot.com/2023/08/pemasaran-online.html">Blog</a></li>
-                      <li><a href="https://kateonconservation.com/2021/01/05/100-wildlife-bloggers-who-are-bettering-the-world/">Hewan</a></li>
-                      <li><a href="galery">Galeri</a></li>
-                      <li><a href="#">Testimonial</a></li>
-                  </ul>
-              </div>
-              <div class="footer-column">
-                  <h3 class="fw-bolder text-light">Privacy</h3>
-                  <ul>
-                      <li><a href="#">Karir</a></li>
-                      <li><a href="tentang">Tentang Kami</a></li>
-                      <li><a href="#">Kontak Kami</a></li>
-                      <li><a href="#">Servis</a></li>
-                  </ul>
-              </div>
-              <div class="footer-column">
-                  <h3 class="fw-bolder text-light">Contact Info</h3>
-                  <ul>
-                      <li class="text-light"><a href="https://www.instagram.com/p/C-fiXCHCrc9/"><img src="img/Group 66.png" style="height: 30px; width: 20px"> tastyfood@gmail.com</a></li>
-                      <li class="text-light"><a href="#"><img src="img/Group 67.png" style="height: 30px; width: 20px"> +62 812 3456 7890</a></li>
-                      <li class="text-light"><a href="https://cyberlabs.co.id/"><img src="img/Group 68.png" style="height: 30px; width: 20px"> Cyberlabs, Jawa Barat</a></li>
-                  </ul>
+<div class="container mt-5">
+  <div class="jumbotron">
+      <div class="footer-container">
+          <div class="footer-column">
+              <h2 class="fw-bolder text-light">Tasty Food</h2>
+              <p class="fw-bolder text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div class="social-icons">
+                  <a href="https://www.bing.com/ck/a?!&&p=b460a9380f582810JmltdHM9MTcyNTE0ODgwMCZpZ3VpZD0wYWY1MWEzOC02NDAwLTZmM2QtMThlYS0wOWRhNjU1NjZlZTImaW5zaWQ9NTIwNw&ptn=3&ver=2&hsh=3&fclid=0af51a38-6400-6f3d-18ea-09da65566ee2&psq=facebook&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL2luZGV4LnBocC8&ntb=1"><img src="img/001-facebook.png" alt="Facebook" class="icon"></a>
+                  <a href="https://www.bing.com/ck/a?!&&p=3af03bccfbcdf613JmltdHM9MTcyNTE0ODgwMCZpZ3VpZD0wYWY1MWEzOC02NDAwLTZmM2QtMThlYS0wOWRhNjU1NjZlZTImaW5zaWQ9NTE5Mw&ptn=3&ver=2&hsh=3&fclid=0af51a38-6400-6f3d-18ea-09da65566ee2&psq=twitter&u=a1aHR0cHM6Ly90d2l0dGVyLmNvbS8_bGFuZz1lbi1pZA&ntb=1"><img src="img/002-twitter.png" alt="Twitter" class="icon"></a>
               </div>
           </div>
+          <div class="footer-column">
+              <h3 class="fw-bolder text-light">Useful links</h3>
+              <ul>
+                  <li><a href="https://wannmee.blogspot.com/2023/08/pemasaran-online.html">Blog</a></li>
+                  <li><a href="https://kateonconservation.com/2021/01/05/100-wildlife-bloggers-who-are-bettering-the-world/">Hewan</a></li>
+                  <li><a href="galery">Galeri</a></li>
+                  <li><a href="#">Testimonial</a></li>
+              </ul>
+          </div>
+          <div class="footer-column">
+              <h3 class="fw-bolder text-light">Privacy</h3>
+              <ul>
+                  <li><a href="#">Karir</a></li>
+                  <li><a href="tentang">Tentang Kami</a></li>
+                  <li><a href="#">Kontak Kami</a></li>
+                  <li><a href="#">Servis</a></li>
+              </ul>
+          </div>
+          <div class="footer-column">
+              <h3 class="fw-bolder text-light">Contact Info</h3>
+              <ul>
+                  <li class="text-light"><a href="https://www.instagram.com/p/C-fiXCHCrc9/"><img src="img/Group 66.png" style="height: 30px; width: 20px"> tastyfood@gmail.com</a></li>
+                  <li class="text-light"><a href="#"><img src="img/Group 67.png" style="height: 30px; width: 20px"> +62 812 3456 7890</a></li>
+                  <li class="text-light"><a href="https://cyberlabs.co.id/"><img src="img/Group 68.png" style="height: 30px; width: 20px"> Cyberlabs, Jawa Barat</a></li>
+              </ul>
+          </div>
       </div>
+      <p class="copyright">Copyright © 2024 All rights reserved</p>
   </div>
+</div>
 </footer>
         
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
