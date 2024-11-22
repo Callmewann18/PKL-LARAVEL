@@ -9,8 +9,6 @@
             <thead>
                 <tr>
                     <th>Image</th>
-                    <th>Title</th>
-                    <th></th>
                     <th>Action</th>
                 </tr>
             </thead>
