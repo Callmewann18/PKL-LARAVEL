@@ -24,14 +24,6 @@
                     @endif
                 </div>
                 <div class="mb-3">
-                    <label for="image" class="form-label">Image</label>
-                    <input class="form-control" type="file" name="image" id="image">
-                    @if ($errors->has('image'))
-                    <p class="text-danger">{{$errors->first('image')}}</p>
-                        
-                    @endif
-                </div>
-                <div class="mb-3">
                    <img src="{{asset('storage/'.$post->image)}}" width="100%" alt="">
                 </div>
                 <div class="mb-3">
