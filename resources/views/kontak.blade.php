@@ -189,20 +189,28 @@
 </style>
 
 
-<div class="container">
-    <h2>KONTAK KAMI</h2>
-    <br>
-    <form action="#">
-        <div class="left">
-            <input type="text" placeholder="Subject" name="subject" required>
-            <input type="text" placeholder="Name" name="name" required>
-            <input type="email" placeholder="Email" name="email" required>
+    <div class="container">
+        <h2>KONTAK KAMI</h2>
+        @if (session('success'))
+        <div class="alert alert-success">
+            {{ session('success')}}
         </div>
-        <div class="right">
-            <textarea placeholder="Message" required></textarea>
-        </div>
-    </form>
-        <input type="submit" value="KIRIM">
+        @endif
+        <br>
+        <form action="{{ route('contact.send') }}" method="POST">
+            @csrf
+            <div class="left">
+                <input type="text" placeholder="Subject" name="subject" required>
+                <input type="text" placeholder="Name" name="name" required>
+                <input type="email" placeholder="Email" name="email" required>
+            </div>
+            <div class="right">
+                <textarea placeholder="Message" name="message" required></textarea>
+            </div>
+            <input type="submit" value="KIRIM">
+        </form>
+        
+
     <br>
     <br>
     <br>
@@ -296,6 +304,14 @@
         height: 30px;
     }
 
+    footer .copyright {
+        text-align: center;
+        color: #fff;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+
     @media (max-width: 768px) {
         .footer-container {
             flex-direction: column; 
@@ -349,6 +365,7 @@
                   </ul>
               </div>
           </div>
+          <p class="copyright">Copyright © 2024 All rights reserved</p>
       </div>
   </div>
 </footer>
