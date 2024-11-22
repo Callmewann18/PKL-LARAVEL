@@ -23,16 +23,20 @@
             <div class="col-md-4">
                 <div class="list-group">
                     <div class="list-group-item">
-                        <a href="/posts">Posts</a>
+                        <a href="/posts" class="text-black">Posts</a>
                     </div>
                     <div class="list-group-item">
-                        <a href="/posts/create">Upload Image</a>
+                        <a href="/posts/create" class="text-black">Create Posts</a>
                     </div>
                     <div class="list-group-item">
-                        <a href="dashboard">Back to The Dashboard</a>
+                        <a href="/berita" class="text-black">Halaman Berita</a>
+                    </div>
+                    <div class="list-group-item">
+                        <a href="/dashboard" class="text-black">Dashboard</a>
                     </div>
                 </div>
             </div>
+            
             <div class="col-md-8">
                 @yield('content')
             </div>
