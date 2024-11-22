@@ -105,152 +105,95 @@
       </div>
 </body>
       <div class="container mt-5">
-        <div class="jumbotron">
-          <div class="text-start mg-top-40 fs-1 fw-bolder text-light">TENTANG KAMI</div>
-        </div>
-    </nav>
+            <div class="jumbotron">
+            <div class="text-start mg-top-40 fs-1 fw-bolder text-light">TENTANG KAMI</div>
+            </div>
+      </div>
     </section>
-
-        <br>
-        <br>
-        <style>
-            .container {
-                max-width: 1200px;
-                margin: auto;
-                padding: 20px;
-            }
-        
-            
-            .tasty-food-section {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                gap: 20px;
-                padding: 20px;
-                background-color: #fff;
-                border-radius: 10px;
-                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            }
-        
-            .text-content {
-                flex: 1;
-            }
-        
-            .text-content h2 {
-                font-size: 32px;
-                margin-bottom: 15px;
-            }
-        
-            .text-content p {
-                font-size: 16px;
-                line-height: 1.6;
-                margin-bottom: 15px;
-            }
-        
-           
-            .image-gallery {
-                display: flex;
-                gap: 15px;
-            }
-        
-            
-            .image-item img {
-                width: 150px; 
-                height: 305px;
-                object-fit: cover;
-                border-radius: 10px;
-            }
-        
-            @media (max-width: 1024px) {
-        .tasty-food-section {
-            flex-direction: column; 
-            text-align: center;
+    <style>
+       .tasty-food-section {
+            background-color: #f4f4f4;
+            background-repeat: repeat-x;
+            padding-top: 100px; 
+            padding-bottom: 80px; 
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
         }
 
-        .image-gallery {
-            justify-content: center; 
+
+        .content-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex; 
+            justify-content: space-between;
             align-items: center;
         }
-
-        .image-item img {
-            width: 250px; 
-            height: 350px;
-            margin: 0 auto; 
-        }
-
-        .text-content h2 {
-            font-size: 28px;
-        }
-
-        .text-content p {
-            font-size: 14px;
-        }
-    }
-
-    
-    @media (max-width: 768px) {
-        .tasty-food-section {
-            padding: 15px;
-        }
-
-        .image-item img {
-            width: 220px; 
-            height: 220px;
-            margin: 0 auto;
-        }
-
-        .text-content h2 {
-            font-size: 24px;
-        }
-
-        .text-content p {
-            font-size: 13px;
-        }
-    }
-
-    @media (max-width: 480px) {
-        .tasty-food-section {
-            padding: 10px;
-        }
-
-        .image-item img {
-            width: 200px; 
-            height: 250px;
-            margin: 0 auto;
-        }
-
+        
         .text-content h2 {
             font-size: 22px;
+            margin-bottom: 15px;
         }
-
+        
         .text-content p {
-            font-size: 12px;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 15px;
         }
-    }
-        </style>
+        
+        .image-gallery {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .image-item img {
+            width: 180px;
+            height: 305px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        
+        @media (max-width: 1024px) {
+            .content-wrapper {
+                flex-direction: column;
+                text-align: center;
+            }
+        
+            .image-gallery {
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    </style>        
         
     </head>
     
-        <div class="container">
+        <div class="container mt-5 mb-5">
             <div class="jumbotron">
                 <section class="tasty-food-section">
-                    <div class="text-content">
-                        <h2 class="fw-bolder">TASTY FOOD</h2>
-                        <p class="fw-bolder">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare, augue eu rutrum commodo, dui diam convallis arcu, eget consectetur ex sem eget lacus. Nullam vitae dignissim neque, vel luctus ex. Fusce sit amet viverra ante.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare, augue eu rutrum commodo, dui diam convallis arcu, eget consectetur ex sem eget lacus. Nullam vitae dignissim neque, vel luctus ex. Fusce sit amet viverra ante.</p>
-                    </div>
-    
-                    <!-- Bagian Gambar -->
-                    <div class="image-gallery">
-                        <div class="image-item">
-                            <img src="img/brooke-lark-oaz0raysASk-unsplash.jpg" alt="Food Image 1">
+                    <div class="content-wrapper">
+                        <div class="text-content">
+                            <h2 class="fw-bolder">TASTY FOOD</h2>
+                            <p class="fw-bolder">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare, augue eu rutrum commodo, dui diam convallis arcu, eget consectetur ex sem eget lacus. Nullam vitae dignissim neque, vel luctus ex. Fusce sit amet viverra ante.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare, augue eu rutrum commodo, dui diam convallis arcu, eget consectetur ex sem eget lacus. Nullam vitae dignissim neque, vel luctus ex. Fusce sit amet viverra ante.</p>
                         </div>
-                        <div class="image-item">
-                            <img src="img/Chefsolo.jpg" style="height: 303px" alt="Food Image 2">
+            
+                        <div class="image-gallery">
+                            <div class="image-item">
+                                <img src="img/brooke-lark-oaz0raysASk-unsplash.jpg" alt="Food Image 1">
+                            </div>
+                            <div class="image-item">
+                                <img src="img/Chefsolo.jpg" style="height: 303px" alt="Food Image 2">
+                            </div>
                         </div>
                     </div>
                 </section>
             </div>
+            
         </div>
     
         
@@ -435,86 +378,100 @@
         <br>
         <br>
         
-    <style>
-        footer {
-            padding: 20px 0;
-            background-color: #000000;
-        }
-    
-        .footer-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            flex-wrap: wrap; 
-            justify-content: space-between;
-            padding: 20px;
-        }
-    
-        .footer-column {
-            flex: 1;
-            margin: 0 15px;
-            min-width: 200px;
-        }
-    
-        .footer-column h2, .footer-column h3 {
-            margin-bottom: 15px;
-            font-size: 18px;
-        }
-    
-        .footer-column p {
-            line-height: 1.4;
-            font-size: 11px;
-        }
-    
-        .footer-column ul {
-            list-style-type: none;
-            padding: 10px;
-        }
-    
-        .footer-column ul li {
-            margin-bottom: 10px;
-        }
-    
-        .footer-column ul li a {
-            text-decoration: none;
-            color: #fff;
-            font-size: 12px;
-            transition: color 0.3s;
-        }
-    
-        .footer-column ul li a:hover {
-            color: #2f07f3;
-        }
-    
-        .social-icons {
-            margin-top: 10px;
-            padding-top: 10px;
-        }
-    
-        .social-icons a {
-            margin-right: 10px;
-            display: inline-block;
-        }
-    
-        .icon {
-            width: 30px;
-            height: 30px;
-        }
-    
-        @media (max-width: 768px) {
+        <style>
+            footer {
+                background-color: #000000;
+                background-repeat: repeat-x;
+                padding: 20px 0;
+                width: 100vw;
+                position: relative;
+                left: 50%;
+                right: 50%;
+                margin-left: -50vw;
+                margin-right: -50vw;
+            }
+        
             .footer-container {
-                flex-direction: column; 
-                align-items: center; 
-                text-align: center; 
+                max-width: 1200px;
+                margin: 0 auto;
+                display: flex;
+                flex-wrap: wrap; 
+                justify-content: space-between;
+                padding: 20px;
             }
-    
+        
             .footer-column {
-                margin-bottom: 20px;
+                flex: 1;
+                margin: 0 15px;
+                min-width: 200px;
             }
-        }
-    </style>
-    
-    <footer>
+        
+            .footer-column h2, .footer-column h3 {
+                margin-bottom: 15px;
+                font-size: 18px;
+            }
+        
+            .footer-column p {
+                line-height: 1.4;
+                font-size: 11px;
+            }
+        
+            .footer-column ul {
+                list-style-type: none;
+                padding: 10px;
+            }
+        
+            .footer-column ul li {
+                margin-bottom: 10px;
+            }
+        
+            .footer-column ul li a {
+                text-decoration: none;
+                color: #fff;
+                font-size: 12px;
+                transition: color 0.3s;
+            }
+        
+            .footer-column ul li a:hover {
+                color: #2f07f3;
+            }
+        
+            .social-icons {
+                margin-top: 10px;
+                padding-top: 10px;
+            }
+        
+            .social-icons a {
+                margin-right: 10px;
+                display: inline-block;
+            }
+        
+            .icon {
+                width: 30px;
+                height: 30px;
+            }
+            
+            footer .copyright {
+                text-align: center;
+                color: #fff;
+                font-size: 14px;
+                margin-top: 20px;
+            }
+
+            @media (max-width: 768px) {
+                .footer-container {
+                    flex-direction: column; 
+                    align-items: center; 
+                    text-align: center; 
+                }
+        
+                .footer-column {
+                    margin-bottom: 20px;
+                }
+            }
+        </style>
+      
+      <footer>
         <div class="container mt-5">
             <div class="jumbotron">
                 <div class="footer-container">
@@ -549,14 +506,15 @@
                         <ul>
                             <li class="text-light"><a href="https://www.instagram.com/p/C-fiXCHCrc9/"><img src="img/Group 66.png" style="height: 30px; width: 20px"> tastyfood@gmail.com</a></li>
                             <li class="text-light"><a href="#"><img src="img/Group 67.png" style="height: 30px; width: 20px"> +62 812 3456 7890</a></li>
-                            <li class="text-light"><a href="https://cyberlabs.co.id/"><img src="img/Group 68.png" style="height: 30px; width: 20px"> Cyberlabas, Jawa Barat</a></li>
+                            <li class="text-light"><a href="https://cyberlabs.co.id/"><img src="img/Group 68.png" style="height: 30px; width: 20px"> Cyberlabs, Jawa Barat</a></li>
                         </ul>
                     </div>
                 </div>
+                <p class="copyright">Copyright © 2024 All rights reserved</p>
             </div>
         </div>
     </footer>
-    </html>
+</html>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
