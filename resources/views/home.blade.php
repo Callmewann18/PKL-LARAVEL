@@ -16,13 +16,13 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
+    background-color: #f4f4f4;
     overflow-x: hidden;
 }
 
 /* Navbar */
 header {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -92,7 +92,7 @@ nav {
 }
 
 .hero-image img {
-    width: 200px;
+    width: 100px;
     height: auto;
     border-radius: 15px;
 }
@@ -135,7 +135,7 @@ nav {
 
     .hero-image img {
         width: 30%;
-        margin-top: -50px;
+        margin-top: 50px;
     }
 }
 
@@ -167,137 +167,136 @@ nav {
             </ul>
           </div>
         </div>
-      </nav>
+    </nav>
+    <section class="hero">
+            <div class="hero-text">
+                <h2>HEALTHY <br><span>TASTY FOOD</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare, augue eu rutrum commodo, dui diam convallis arcu, eget consectetur ex sem eget lacus. Nullam vitae dignissim neque, vel luctus ex. Fusce sit amet viverra ante.</p>
+                <a href="tentang" class="cta-button">TENTANG KAMI</a>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        <div class="hero-image">
+            <img src="img/img-4.png" style="position: static; width: 145%; margin-left: -22%; margin-top: -60%" alt="Tasty Food">
+        </div>
+    </section>
+
 </div>
-    
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero-text">
-                    <h2>HEALTHY <br><span>TASTY FOOD</span></h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare, augue eu rutrum commodo, dui diam convallis arcu, eget consectetur ex sem eget lacus. Nullam vitae dignissim neque, vel luctus ex. Fusce sit amet viverra ante.</p>
-                    <a href="tentang" class="cta-button">TENTANG KAMI</a>
-                </div>
-            </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div class="hero-image">
-                <img src="img/img-4.png" style="position: static; width: 110%; margin-left: -5%; margin-top: -60%" alt="Tasty Food">
-            </div>
-        </section>
-    
-        <section class="about-us">
-            <h5 class="fw-bolder">TENTANG KAMI</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare, augue eu rutrum commodo, dui diam convallis arcu, eget consectetur ex sem eget lacus. Nullam vitae dignissim neque, vel luctus ex. Fusce sit amet viverra ante.</p>
-            <hr>
-        </section>
+    <section class="about-us">
+        <h5 class="fw-bolder">TENTANG KAMI</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare, augue eu rutrum commodo, dui diam convallis arcu, eget consectetur ex sem eget lacus. Nullam vitae dignissim neque, vel luctus ex. Fusce sit amet viverra ante.</p>
+        <hr>
+    </section>
+            
+        
     
     </body>
 
- <style>
+    <style>
         .food-container {
             display: flex;
             justify-content: center;
             background-image: url('img/Group 70@2x.png');
+            background-size: cover; 
+            background-position: center;
             align-items: center;
             flex-wrap: wrap;
-            padding: 20px;
-            gap: 20px; 
+            padding: 40px; 
+            gap: 1px;
+            min-height: 500px;
         }
-
+    
         .food-card {
             background-color: white;
             border-radius: 15px;
             width: 250px;
             height: 300px;
             padding: 20px;
-            margin: 10px;
+            margin: 20px 10px; 
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.2s ease-in-out;
         }
-
+    
         .food-card:hover {
             transform: translateY(-7px);
         }
-
+    
         .food-card img {
-            width: 120px;
-            height: 120px;
-            margin-top: -15%;
+            width: 185px; 
+            height: 185px; 
+            margin-top: -100px;
+            margin-bottom: 15px; 
             border-radius: 50%;
-            margin-bottom: 15px;
         }
-
+    
         h3 {
             font-size: 20px;
             margin-bottom: 10px;
         }
-
+    
         p {
             font-size: 14px;
             color: #555;
         }
-
+    
+       
         @media (max-width: 768px) {
             .food-container {
-            flex-direction: column;
-            align-items: center;
-            padding: 0 10px; 
+                flex-direction: column; 
+                align-items: center;
+                padding: 40px 10px;
             }
-
+    
             .food-card {
-            width: 100%;
-            max-width: 350px; 
-            margin: 10px 0; 
+                width: 100%;
+                max-width: 350px;
+                margin: 20px 0; 
             }
         }
-
+    
+        
         @media (max-width: 480px) {
             .food-card {
-            width: 100%; 
-            max-width: 300px; 
+                width: 100%; 
+                max-width: 300px;
+                margin: 20px 0;
             }
         }
-</style>
-
-   
- <section class="food-container">
-    <div class="food-card">
-        <img src="img/img-1.png" alt="Food Image 1">
-        <h3 class="fw-bolder">LOREM IPSUM</h3>
-        <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellusornare, augue eu rutrum commodo.</p>
-    </div>
-    <div class="food-card">
-        <img src="img/img-2.png" alt="Food Image 2">
-        <h3 class="fw-bolder">LOREM IPSUM</h3>
-        <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellusornare, augue eu rutrum commodo.</p>
-    </div>
-    <div class="food-card">
-        <img src="img/img-3.png" alt="Food Image 3">
-        <h3 class="fw-bolder">LOREM IPSUM</h3>
-        <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellusornare, augue eu rutrum commodo.</p>
-    </div>
-    <div class="food-card">
-        <img src="img/img-4.png" alt="Food Image 4">
-        <h3 class="fw-bolder">LOREM IPSUM</h3>
-        <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellusornare, augue eu rutrum commodo.</p>
-    </div>
-</section>
+    </style>
+    
+    <section class="food-container">
+        <div class="food-card">
+            <img src="img/img-1.png" alt="Food Image 1">
+            <h3 class="fw-bolder">LOREM IPSUM</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellusornare, augue eu rutrum commodo.</p>
+        </div>
+        <div class="food-card">
+            <img src="img/img-2.png" alt="Food Image 2">
+            <h3 class="fw-bolder">LOREM IPSUM</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellusornare, augue eu rutrum commodo.</p>
+        </div>
+        <div class="food-card">
+            <img src="img/img-3.png" alt="Food Image 3">
+            <h3 class="fw-bolder">LOREM IPSUM</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellusornare, augue eu rutrum commodo.</p>
+        </div>
+        <div class="food-card">
+            <img src="img/img-4.png" alt="Food Image 4">
+            <h3 class="fw-bolder">LOREM IPSUM</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellusornare, augue eu rutrum commodo.</p>
+        </div>
+    </section>
+    
 <br>
 <br>
 <br>
@@ -418,145 +417,156 @@ nav {
 <br>
 <br>
 <br>
-        <h4 class="mb-4 text-center fw-bolder">GALERY KAMI</h4>
-        <style>
-            .grid-container {
-              display: grid;
-              grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-              gap: 20px;
-              padding: 10px;
-            }
-          
-            .grid-container img {
-              width: 100%; 
-              height: 350px; 
-              border-radius: 15px;
-              object-fit: cover; 
-            }
-          
-           
-            @media (max-width: 768px) {
-              .grid-container img {
-                height: 200px;
-              }
-            }
-          
-            @media (max-width: 480px) {
-              .grid-container {
-                grid-template-columns: 1fr; 
-              }
-              .grid-container img {
-                height: 280px; 
-              }
-            }
-          </style>
-          
-          <div class="container my-5">
-            <div class="card-container">
-              <div class="center">
-                <div class="grid-container">
-                  <img src="img/monika-grabkowska-P1aohbiT-EY-unsplash.jpg" alt="Image 1">
-                  <img src="img/jonathan-borba-Gkc_xM3VY34-unsplash.jpg" alt="Image 2">
-                  <img src="img/michele-blackwell-rAyCBQTH7ws-unsplash.jpg" alt="Image 3">
+            <div class="cards">
+                <br>
+                <h4 class="mb-4 text-center fw-bolder">GALERY KAMI</h4>
+                <style>
+                    .cards{
+                        background-color: #ffffff;
+                    }
+
+                    .grid-container {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                    gap: 20px;
+                    padding: 10px;
+                    }
+                
+                    .grid-container img {
+                    width: 100%; 
+                    height: 350px; 
+                    border-radius: 15px;
+                    object-fit: cover; 
+                    }
+                
+                
+                    @media (max-width: 768px) {
+                    .grid-container img {
+                        height: 200px;
+                    }
+                    }
+                
+                    @media (max-width: 480px) {
+                    .grid-container {
+                        grid-template-columns: 1fr; 
+                    }
+                    .grid-container img {
+                        height: 280px; 
+                    }
+                    }
+                </style>
+                
+                <div class="container my-5">
+                    <div class="card-container">
+                    <div class="center">
+                        <div class="grid-container">
+                        <img src="img/monika-grabkowska-P1aohbiT-EY-unsplash.jpg" alt="Image 1">
+                        <img src="img/jonathan-borba-Gkc_xM3VY34-unsplash.jpg" alt="Image 2">
+                        <img src="img/michele-blackwell-rAyCBQTH7ws-unsplash.jpg" alt="Image 3">
+                        </div>
+                        <div class="grid-container">
+                        <img src="img/anna-pelzer-IGfIGP5ONV0-unsplash.jpg" alt="Image 4">
+                        <img src="img/brooke-lark-1Rm9GLHV0UA-unsplash.jpg" alt="Image 5">
+                        <img src="img/eiliv-aceron-ZuIDLSz3XLg-unsplash.jpg" alt="Image 6">
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="d-grid gap-2 col-4 mx-auto">
+                        <a href="galery" class="btn btn-dark" type="button">LIHAT LEBIH BANYAK</a>
+                    </div>
+                    <br>
+                    </div>
+                
                 </div>
-                <div class="grid-container">
-                  <img src="img/anna-pelzer-IGfIGP5ONV0-unsplash.jpg" alt="Image 4">
-                  <img src="img/brooke-lark-1Rm9GLHV0UA-unsplash.jpg" alt="Image 5">
-                  <img src="img/eiliv-aceron-ZuIDLSz3XLg-unsplash.jpg" alt="Image 6">
-                </div>
-              </div>
-              <br>
-              <div class="d-grid gap-2 col-4 mx-auto">
-                <a href="galery" class="btn btn-dark" type="button">LIHAT LEBIH BANYAK</a>
-              </div>
-              <br>
-              <br>
-              <div class="d-grid gap-2 col-4 mx-auto">
-                    <a class="btn btn-danger" href="dashboard" role="button">Return to the Dashboard</a>
-              </div>
             </div>
-           
-          </div>
           
 
-            <style>
-                footer {
-                    padding: 20px 0;
-                    background-color: #000000;
-                }
-              
-                .footer-container {
-                    max-width: 1200px;
-                    margin: 0 auto;
-                    display: flex;
-                    flex-wrap: wrap; 
-                    justify-content: space-between;
-                    padding: 20px;
-                }
-              
-                .footer-column {
-                    flex: 1;
-                    margin: 0 15px;
-                    min-width: 200px;
-                }
-              
-                .footer-column h2, .footer-column h3 {
-                    margin-bottom: 15px;
-                    font-size: 18px;
-                }
-              
-                .footer-column p {
-                    line-height: 1.4;
-                    font-size: 11px;
-                }
-              
-                .footer-column ul {
-                    list-style-type: none;
-                    padding: 10px;
-                }
-              
-                .footer-column ul li {
-                    margin-bottom: 10px;
-                }
-              
-                .footer-column ul li a {
-                    text-decoration: none;
-                    color: #fff;
-                    font-size: 12px;
-                    transition: color 0.3s;
-                }
-              
-                .footer-column ul li a:hover {
-                    color: #2f07f3;
-                }
-              
-                .social-icons {
-                    margin-top: 10px;
-                    padding-top: 10px;
-                }
-              
-                .social-icons a {
-                    margin-right: 10px;
-                    display: inline-block;
-                }
-              
-                .icon {
-                    width: 30px;
-                    height: 30px;
-                }
-              
-                @media (max-width: 768px) {
+                <style>
+                    footer {
+                        padding: 20px 0;
+                        background-color: #000000;
+                    }
+                
                     .footer-container {
-                        flex-direction: column; 
-                        align-items: center; 
-                        text-align: center; 
+                        max-width: 1200px;
+                        margin: 0 auto;
+                        display: flex;
+                        flex-wrap: wrap; 
+                        justify-content: space-between;
+                        padding: 20px;
                     }
-              
+                
                     .footer-column {
-                        margin-bottom: 20px;
+                        flex: 1;
+                        margin: 0 15px;
+                        min-width: 200px;
                     }
-                }
-              </style>
+                
+                    .footer-column h2, .footer-column h3 {
+                        margin-bottom: 15px;
+                        font-size: 18px;
+                    }
+                
+                    .footer-column p {
+                        line-height: 1.4;
+                        font-size: 11px;
+                    }
+                
+                    .footer-column ul {
+                        list-style-type: none;
+                        padding: 10px;
+                    }
+                
+                    .footer-column ul li {
+                        margin-bottom: 10px;
+                    }
+                
+                    .footer-column ul li a {
+                        text-decoration: none;
+                        color: #fff;
+                        font-size: 12px;
+                        transition: color 0.3s;
+                    }
+                
+                    .footer-column ul li a:hover {
+                        color: #2f07f3;
+                    }
+                
+                    .social-icons {
+                        margin-top: 10px;
+                        padding-top: 10px;
+                    }
+                
+                    .social-icons a {
+                        margin-right: 10px;
+                        display: inline-block;
+                    }
+                
+                    .icon {
+                        width: 30px;
+                        height: 30px;
+                    }
+                    
+                    footer .copyright {
+                        text-align: center;
+                        color: #fff;
+                        font-size: 14px;
+                        margin-top: 20px;
+                    }
+
+                    @media (max-width: 768px) {
+                        .footer-container {
+                            flex-direction: column; 
+                            align-items: center; 
+                            text-align: center; 
+                        }
+                
+                        .footer-column {
+                            margin-bottom: 20px;
+                        }
+                    }
+                </style>
               
               <footer>
                 <div class="container mt-5">
@@ -597,6 +607,7 @@ nav {
                                 </ul>
                             </div>
                         </div>
+                        <p class="copyright">Copyright © 2024 All rights reserved</p>
                     </div>
                 </div>
               </footer>
