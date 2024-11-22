@@ -19,8 +19,8 @@
                     <td>
                         <img src="{{asset('storage/'.$post->image)}}" alt="" width="100px" height="50px">
                     </td>
-                    <td>Image</td>
                     <td>{{$post->title}}</td>
+                    <td>{{$post->description}}</td>
                     <td>
                         <a href="/posts/{{$post->id}}/show" class="btn btn-primary btn-sm">View</a>
                         <a href="/posts/{{$post->id}}/edit" class="btn btn-info btn-sm text-white">Edit</a>
